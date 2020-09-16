@@ -1,0 +1,10 @@
+D:\Projects\1-laba-OOP\1-laba-OOP\bin\Debug\1-laba-OOP.exe.config
+D:\Projects\1-laba-OOP\1-laba-OOP\bin\Debug\1-laba-OOP.exe
+D:\Projects\1-laba-OOP\1-laba-OOP\bin\Debug\1-laba-OOP.pdb
+D:\Projects\1-laba-OOP\1-laba-OOP\obj\Debug\1-laba-OOP.csprojAssemblyReference.cache
+D:\Projects\1-laba-OOP\1-laba-OOP\obj\Debug\_1_laba_OOP.Form1.resources
+D:\Projects\1-laba-OOP\1-laba-OOP\obj\Debug\_1_laba_OOP.Properties.Resources.resources
+D:\Projects\1-laba-OOP\1-laba-OOP\obj\Debug\1-laba-OOP.csproj.GenerateResource.cache
+D:\Projects\1-laba-OOP\1-laba-OOP\obj\Debug\1-laba-OOP.csproj.CoreCompileInputs.cache
+D:\Projects\1-laba-OOP\1-laba-OOP\obj\Debug\1-laba-OOP.exe
+D:\Projects\1-laba-OOP\1-laba-OOP\obj\Debug\1-laba-OOP.pdb
