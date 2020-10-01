@@ -197,7 +197,7 @@ namespace _1_laba_OOP
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            bitmap1.RotateFlip(RotateFlipType.Rotate90FlipY);
+            bitmap1.RotateFlip(RotateFlipType.Rotate90FlipNone);
             pictureturn.Image = bitmap1;
             pictureturn.Refresh();
         }
