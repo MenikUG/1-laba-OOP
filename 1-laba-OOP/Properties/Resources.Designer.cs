@@ -73,6 +73,16 @@ namespace _1_laba_OOP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Dont {
+            get {
+                object obj = ResourceManager.GetObject("Dont", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fireworks {
             get {
                 object obj = ResourceManager.GetObject("fireworks", resourceCulture);

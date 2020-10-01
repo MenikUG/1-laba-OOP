@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
             "Russia"}, 0, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
             "China"}, 1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
             "Belarusian"}, 2, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem(new string[] {
             "German"}, 3, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
             "America"}, 4, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.button_Hello = new System.Windows.Forms.Button();
@@ -52,6 +52,12 @@
             this.pbfull = new System.Windows.Forms.Label();
             this.pagelist_2 = new System.Windows.Forms.TabPage();
             this.Menu = new System.Windows.Forms.MenuStrip();
+            this.main = new System.Windows.Forms.ToolStripMenuItem();
+            this.Info = new System.Windows.Forms.ToolStripMenuItem();
+            this.Galka = new System.Windows.Forms.ToolStripMenuItem();
+            this.Komplekt = new System.Windows.Forms.ToolStripMenuItem();
+            this.CPU = new System.Windows.Forms.ToolStripMenuItem();
+            this.GPU = new System.Windows.Forms.ToolStripMenuItem();
             this.CHECK = new System.Windows.Forms.Button();
             this.label_Task = new System.Windows.Forms.Label();
             this.picture = new System.Windows.Forms.PictureBox();
@@ -65,12 +71,6 @@
             this.Reset = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.info_countrylist = new System.Windows.Forms.ToolTip(this.components);
-            this.main = new System.Windows.Forms.ToolStripMenuItem();
-            this.Info = new System.Windows.Forms.ToolStripMenuItem();
-            this.Galka = new System.Windows.Forms.ToolStripMenuItem();
-            this.Komplekt = new System.Windows.Forms.ToolStripMenuItem();
-            this.CPU = new System.Windows.Forms.ToolStripMenuItem();
-            this.GPU = new System.Windows.Forms.ToolStripMenuItem();
             this.pagelist.SuspendLayout();
             this.pagelist_1.SuspendLayout();
             this.pagelist_2.SuspendLayout();
@@ -186,9 +186,9 @@
             // pagelist_2
             // 
             this.pagelist_2.BackColor = System.Drawing.Color.Gray;
+            this.pagelist_2.Controls.Add(this.label_Task);
             this.pagelist_2.Controls.Add(this.Menu);
             this.pagelist_2.Controls.Add(this.CHECK);
-            this.pagelist_2.Controls.Add(this.label_Task);
             this.pagelist_2.Controls.Add(this.picture);
             this.pagelist_2.Controls.Add(this.checkedListBox);
             this.pagelist_2.Location = new System.Drawing.Point(4, 25);
@@ -208,6 +208,56 @@
             this.Menu.Size = new System.Drawing.Size(638, 28);
             this.Menu.TabIndex = 0;
             // 
+            // main
+            // 
+            this.main.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Info,
+            this.Galka,
+            this.Komplekt});
+            this.main.Name = "main";
+            this.main.Size = new System.Drawing.Size(80, 26);
+            this.main.Text = "Главное";
+            this.main.Click += new System.EventHandler(this.main_Click);
+            // 
+            // Info
+            // 
+            this.Info.CheckOnClick = true;
+            this.Info.Name = "Info";
+            this.Info.Size = new System.Drawing.Size(207, 26);
+            this.Info.Text = "Информация";
+            this.Info.Click += new System.EventHandler(this.Info_Click);
+            // 
+            // Galka
+            // 
+            this.Galka.CheckOnClick = true;
+            this.Galka.Name = "Galka";
+            this.Galka.Size = new System.Drawing.Size(207, 26);
+            this.Galka.Text = "Галка";
+            this.Galka.Click += new System.EventHandler(this.Galka_Click);
+            // 
+            // Komplekt
+            // 
+            this.Komplekt.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CPU,
+            this.GPU});
+            this.Komplekt.Name = "Komplekt";
+            this.Komplekt.Size = new System.Drawing.Size(207, 26);
+            this.Komplekt.Text = "Комплектующие";
+            // 
+            // CPU
+            // 
+            this.CPU.Name = "CPU";
+            this.CPU.Size = new System.Drawing.Size(173, 26);
+            this.CPU.Text = "Процессор";
+            this.CPU.Click += new System.EventHandler(this.CPU_Click);
+            // 
+            // GPU
+            // 
+            this.GPU.Name = "GPU";
+            this.GPU.Size = new System.Drawing.Size(173, 26);
+            this.GPU.Text = "Видеокарта";
+            this.GPU.Click += new System.EventHandler(this.GPU_Click);
+            // 
             // CHECK
             // 
             this.CHECK.Location = new System.Drawing.Point(365, 405);
@@ -221,6 +271,7 @@
             // label_Task
             // 
             this.label_Task.AutoSize = true;
+            this.label_Task.BackColor = System.Drawing.Color.Transparent;
             this.label_Task.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label_Task.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_Task.Location = new System.Drawing.Point(3, 355);
@@ -237,7 +288,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picture.Location = new System.Drawing.Point(3, 36);
             this.picture.Name = "picture";
-            this.picture.Size = new System.Drawing.Size(638, 324);
+            this.picture.Size = new System.Drawing.Size(638, 321);
             this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picture.TabIndex = 14;
             this.picture.TabStop = false;
@@ -306,17 +357,17 @@
             this.countrylist.Activation = System.Windows.Forms.ItemActivation.OneClick;
             this.countrylist.HideSelection = false;
             this.countrylist.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            listViewItem1.StateImageIndex = 0;
-            listViewItem2.StateImageIndex = 0;
-            listViewItem3.StateImageIndex = 0;
-            listViewItem4.StateImageIndex = 0;
-            listViewItem5.StateImageIndex = 0;
+            listViewItem6.StateImageIndex = 0;
+            listViewItem7.StateImageIndex = 0;
+            listViewItem8.StateImageIndex = 0;
+            listViewItem9.StateImageIndex = 0;
+            listViewItem10.StateImageIndex = 0;
             this.countrylist.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3,
-            listViewItem4,
-            listViewItem5});
+            listViewItem6,
+            listViewItem7,
+            listViewItem8,
+            listViewItem9,
+            listViewItem10});
             this.countrylist.LargeImageList = this.imageList1;
             this.countrylist.Location = new System.Drawing.Point(12, 241);
             this.countrylist.Name = "countrylist";
@@ -364,56 +415,6 @@
             this.progressBar1.Size = new System.Drawing.Size(69, 17);
             this.progressBar1.Step = 1;
             this.progressBar1.TabIndex = 0;
-            // 
-            // main
-            // 
-            this.main.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Info,
-            this.Galka,
-            this.Komplekt});
-            this.main.Name = "main";
-            this.main.Size = new System.Drawing.Size(80, 24);
-            this.main.Text = "Главное";
-            this.main.Click += new System.EventHandler(this.main_Click);
-            // 
-            // Info
-            // 
-            this.Info.CheckOnClick = true;
-            this.Info.Name = "Info";
-            this.Info.Size = new System.Drawing.Size(224, 26);
-            this.Info.Text = "Информация";
-            this.Info.Click += new System.EventHandler(this.Info_Click);
-            // 
-            // Galka
-            // 
-            this.Galka.CheckOnClick = true;
-            this.Galka.Name = "Galka";
-            this.Galka.Size = new System.Drawing.Size(224, 26);
-            this.Galka.Text = "Галка";
-            this.Galka.Click += new System.EventHandler(this.Galka_Click);
-            // 
-            // Komplekt
-            // 
-            this.Komplekt.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CPU,
-            this.GPU});
-            this.Komplekt.Name = "Komplekt";
-            this.Komplekt.Size = new System.Drawing.Size(224, 26);
-            this.Komplekt.Text = "Комплектующие";
-            // 
-            // CPU
-            // 
-            this.CPU.Name = "CPU";
-            this.CPU.Size = new System.Drawing.Size(224, 26);
-            this.CPU.Text = "Процессор";
-            this.CPU.Click += new System.EventHandler(this.CPU_Click);
-            // 
-            // GPU
-            // 
-            this.GPU.Name = "GPU";
-            this.GPU.Size = new System.Drawing.Size(224, 26);
-            this.GPU.Text = "Видеокарта";
-            this.GPU.Click += new System.EventHandler(this.GPU_Click);
             // 
             // MainForm
             // 

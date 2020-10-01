@@ -153,6 +153,7 @@ namespace _1_laba_OOP
             {
                 picture.Image = global::_1_laba_OOP.Properties.Resources.CONGRATULATION;
             }
+            else picture.Image = global::_1_laba_OOP.Properties.Resources.Dont;
         }
 
         private void CPU_Click(object sender, EventArgs e)
