@@ -186,6 +186,21 @@ namespace _1_laba_OOP
         {
             checkedListBox.SetItemChecked(0, true);
         }
+
+        Bitmap bitmap1;
+        private void btn_selectPicture_Click(object sender, EventArgs e)
+        {
+            if (openPicture.ShowDialog() == DialogResult.Cancel)
+                return;
+            pictureturn.ImageLocation = openPicture.FileName;
+            bitmap1 = (Bitmap)Bitmap.FromFile(openPicture.FileName);
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            bitmap1.RotateFlip(RotateFlipType.Rotate90FlipY);
+            pictureturn.Image = bitmap1;
+            pictureturn.Refresh();
+        }
     }
     
 

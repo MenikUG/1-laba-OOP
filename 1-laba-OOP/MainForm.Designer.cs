@@ -51,6 +51,7 @@
             this.pagelist_1 = new System.Windows.Forms.TabPage();
             this.pbfull = new System.Windows.Forms.Label();
             this.pagelist_2 = new System.Windows.Forms.TabPage();
+            this.label_Task = new System.Windows.Forms.Label();
             this.Menu = new System.Windows.Forms.MenuStrip();
             this.main = new System.Windows.Forms.ToolStripMenuItem();
             this.Info = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,10 +60,12 @@
             this.CPU = new System.Windows.Forms.ToolStripMenuItem();
             this.GPU = new System.Windows.Forms.ToolStripMenuItem();
             this.CHECK = new System.Windows.Forms.Button();
-            this.label_Task = new System.Windows.Forms.Label();
             this.picture = new System.Windows.Forms.PictureBox();
             this.checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.pagelist_3 = new System.Windows.Forms.TabPage();
+            this.btn_selectPicture = new System.Windows.Forms.Button();
+            this.pictureturn = new System.Windows.Forms.PictureBox();
+            this.overturn = new System.Windows.Forms.TrackBar();
             this.text4 = new System.Windows.Forms.Label();
             this.listcolor = new System.Windows.Forms.ComboBox();
             this.countrylist = new System.Windows.Forms.ListView();
@@ -71,11 +74,16 @@
             this.Reset = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.info_countrylist = new System.Windows.Forms.ToolTip(this.components);
+            this.openPicture = new System.Windows.Forms.OpenFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
             this.pagelist.SuspendLayout();
             this.pagelist_1.SuspendLayout();
             this.pagelist_2.SuspendLayout();
             this.Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
+            this.pagelist_3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureturn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.overturn)).BeginInit();
             this.SuspendLayout();
             // 
             // button_Hello
@@ -198,6 +206,19 @@
             this.pagelist_2.TabIndex = 1;
             this.pagelist_2.Text = "Gray list";
             // 
+            // label_Task
+            // 
+            this.label_Task.AutoSize = true;
+            this.label_Task.BackColor = System.Drawing.Color.Transparent;
+            this.label_Task.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label_Task.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_Task.Location = new System.Drawing.Point(3, 355);
+            this.label_Task.Name = "label_Task";
+            this.label_Task.Size = new System.Drawing.Size(164, 38);
+            this.label_Task.TabIndex = 15;
+            this.label_Task.Text = "Задания:";
+            this.label_Task.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Menu
             // 
             this.Menu.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -215,7 +236,7 @@
             this.Galka,
             this.Komplekt});
             this.main.Name = "main";
-            this.main.Size = new System.Drawing.Size(80, 26);
+            this.main.Size = new System.Drawing.Size(80, 24);
             this.main.Text = "Главное";
             this.main.Click += new System.EventHandler(this.main_Click);
             // 
@@ -268,19 +289,6 @@
             this.CHECK.UseVisualStyleBackColor = true;
             this.CHECK.Click += new System.EventHandler(this.CHECK_Click);
             // 
-            // label_Task
-            // 
-            this.label_Task.AutoSize = true;
-            this.label_Task.BackColor = System.Drawing.Color.Transparent;
-            this.label_Task.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label_Task.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Task.Location = new System.Drawing.Point(3, 355);
-            this.label_Task.Name = "label_Task";
-            this.label_Task.Size = new System.Drawing.Size(164, 38);
-            this.label_Task.TabIndex = 15;
-            this.label_Task.Text = "Задания:";
-            this.label_Task.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // picture
             // 
             this.picture.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -314,12 +322,47 @@
             // 
             // pagelist_3
             // 
+            this.pagelist_3.Controls.Add(this.button1);
+            this.pagelist_3.Controls.Add(this.btn_selectPicture);
+            this.pagelist_3.Controls.Add(this.pictureturn);
+            this.pagelist_3.Controls.Add(this.overturn);
             this.pagelist_3.Location = new System.Drawing.Point(4, 25);
             this.pagelist_3.Name = "pagelist_3";
             this.pagelist_3.Size = new System.Drawing.Size(644, 502);
             this.pagelist_3.TabIndex = 2;
             this.pagelist_3.Text = "White list";
             this.pagelist_3.UseVisualStyleBackColor = true;
+            // 
+            // btn_selectPicture
+            // 
+            this.btn_selectPicture.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_selectPicture.Location = new System.Drawing.Point(456, 443);
+            this.btn_selectPicture.Name = "btn_selectPicture";
+            this.btn_selectPicture.Size = new System.Drawing.Size(185, 31);
+            this.btn_selectPicture.TabIndex = 2;
+            this.btn_selectPicture.Text = "Выбрать картинку";
+            this.btn_selectPicture.UseVisualStyleBackColor = true;
+            this.btn_selectPicture.Click += new System.EventHandler(this.btn_selectPicture_Click);
+            // 
+            // pictureturn
+            // 
+            this.pictureturn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureturn.Location = new System.Drawing.Point(3, 3);
+            this.pictureturn.Name = "pictureturn";
+            this.pictureturn.Size = new System.Drawing.Size(638, 434);
+            this.pictureturn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureturn.TabIndex = 1;
+            this.pictureturn.TabStop = false;
+            // 
+            // overturn
+            // 
+            this.overturn.Location = new System.Drawing.Point(3, 443);
+            this.overturn.Maximum = 360;
+            this.overturn.Name = "overturn";
+            this.overturn.Size = new System.Drawing.Size(235, 56);
+            this.overturn.TabIndex = 0;
             // 
             // text4
             // 
@@ -416,6 +459,21 @@
             this.progressBar1.Step = 1;
             this.progressBar1.TabIndex = 0;
             // 
+            // openPicture
+            // 
+            this.openPicture.FileName = "openPicture";
+            this.openPicture.Filter = "Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(245, 450);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -444,6 +502,10 @@
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
+            this.pagelist_3.ResumeLayout(false);
+            this.pagelist_3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureturn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.overturn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -482,6 +544,11 @@
         private System.Windows.Forms.ToolStripMenuItem Komplekt;
         private System.Windows.Forms.ToolStripMenuItem CPU;
         private System.Windows.Forms.ToolStripMenuItem GPU;
+        private System.Windows.Forms.Button btn_selectPicture;
+        private System.Windows.Forms.PictureBox pictureturn;
+        private System.Windows.Forms.TrackBar overturn;
+        private System.Windows.Forms.OpenFileDialog openPicture;
+        private System.Windows.Forms.Button button1;
     }
 }
 
