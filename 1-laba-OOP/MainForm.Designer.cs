@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Russia"}, 0, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
-            "China"}, 1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Belarusian"}, 2, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem(new string[] {
-            "German"}, 3, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
-            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
-            "America"}, 4, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Russia"}, 0, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            "China"}, 1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Belarusian"}, 2, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            "German"}, 3, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
+            "America"}, 4, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204))));
             this.button_Hello = new System.Windows.Forms.Button();
             this.text = new System.Windows.Forms.TextBox();
             this.kolich = new System.Windows.Forms.Label();
@@ -47,9 +47,22 @@
             this.poleinput = new System.Windows.Forms.TextBox();
             this.polerepeat = new System.Windows.Forms.TextBox();
             this.text3 = new System.Windows.Forms.Label();
-            this.pagelist = new System.Windows.Forms.TabControl();
-            this.pagelist_1 = new System.Windows.Forms.TabPage();
-            this.pbfull = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.text4 = new System.Windows.Forms.Label();
+            this.listcolor = new System.Windows.Forms.ComboBox();
+            this.countrylist = new System.Windows.Forms.ListView();
+            this.text6 = new System.Windows.Forms.Label();
+            this.Reset = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.info_countrylist = new System.Windows.Forms.ToolTip(this.components);
+            this.openPicture = new System.Windows.Forms.OpenFileDialog();
+            this.pagelist_3 = new System.Windows.Forms.TabPage();
+            this.panelflip = new System.Windows.Forms.Panel();
+            this.flip_180 = new System.Windows.Forms.Button();
+            this.flip_90l = new System.Windows.Forms.Button();
+            this.btn_selectPicture = new System.Windows.Forms.Button();
+            this.flip_90r = new System.Windows.Forms.Button();
+            this.pictureturn = new System.Windows.Forms.PictureBox();
             this.pagelist_2 = new System.Windows.Forms.TabPage();
             this.label_Task = new System.Windows.Forms.Label();
             this.Menu = new System.Windows.Forms.MenuStrip();
@@ -62,28 +75,33 @@
             this.CHECK = new System.Windows.Forms.Button();
             this.picture = new System.Windows.Forms.PictureBox();
             this.checkedListBox = new System.Windows.Forms.CheckedListBox();
-            this.pagelist_3 = new System.Windows.Forms.TabPage();
-            this.btn_selectPicture = new System.Windows.Forms.Button();
-            this.pictureturn = new System.Windows.Forms.PictureBox();
-            this.overturn = new System.Windows.Forms.TrackBar();
-            this.text4 = new System.Windows.Forms.Label();
-            this.listcolor = new System.Windows.Forms.ComboBox();
-            this.countrylist = new System.Windows.Forms.ListView();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.text6 = new System.Windows.Forms.Label();
-            this.Reset = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.info_countrylist = new System.Windows.Forms.ToolTip(this.components);
-            this.openPicture = new System.Windows.Forms.OpenFileDialog();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pagelist.SuspendLayout();
-            this.pagelist_1.SuspendLayout();
+            this.pagelist_1 = new System.Windows.Forms.TabPage();
+            this.pbfull = new System.Windows.Forms.Label();
+            this.pagelist = new System.Windows.Forms.TabControl();
+            this.pagelist_4 = new System.Windows.Forms.TabPage();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.panelquestion = new System.Windows.Forms.Panel();
+            this.labelquestion = new System.Windows.Forms.Label();
+            this.picturePDD = new System.Windows.Forms.PictureBox();
+            this.answer1 = new System.Windows.Forms.RadioButton();
+            this.answer2 = new System.Windows.Forms.RadioButton();
+            this.answer3 = new System.Windows.Forms.RadioButton();
+            this.rezultat = new System.Windows.Forms.Label();
+            this.pagelist_3.SuspendLayout();
+            this.panelflip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureturn)).BeginInit();
             this.pagelist_2.SuspendLayout();
             this.Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
-            this.pagelist_3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureturn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.overturn)).BeginInit();
+            this.pagelist_1.SuspendLayout();
+            this.pagelist.SuspendLayout();
+            this.pagelist_4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.panelquestion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePDD)).BeginInit();
             this.SuspendLayout();
             // 
             // button_Hello
@@ -153,43 +171,193 @@
             this.text3.TabIndex = 6;
             this.text3.Text = "Вы ввели: ";
             // 
-            // pagelist
+            // imageList1
             // 
-            this.pagelist.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Russia.jpg");
+            this.imageList1.Images.SetKeyName(1, "china.jpg");
+            this.imageList1.Images.SetKeyName(2, "belarus.png");
+            this.imageList1.Images.SetKeyName(3, "Germany.jpg");
+            this.imageList1.Images.SetKeyName(4, "America.jpg");
+            this.imageList1.Images.SetKeyName(5, "left.png");
+            this.imageList1.Images.SetKeyName(6, "right.png");
+            // 
+            // text4
+            // 
+            this.text4.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.text4.Location = new System.Drawing.Point(9, 150);
+            this.text4.Name = "text4";
+            this.text4.Size = new System.Drawing.Size(118, 60);
+            this.text4.TabIndex = 9;
+            this.text4.Text = "Выберите цвет для фона у цветного листа";
+            // 
+            // listcolor
+            // 
+            this.listcolor.FormattingEnabled = true;
+            this.listcolor.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.listcolor.Items.AddRange(new object[] {
+            "Красный",
+            "Оранжевый",
+            "Жёлтый",
+            "Зелёный",
+            "Голубой",
+            "Синий",
+            "Фиолетовый",
+            "Белый",
+            "Черный",
+            "Серый"});
+            this.listcolor.Location = new System.Drawing.Point(139, 165);
+            this.listcolor.Name = "listcolor";
+            this.listcolor.Size = new System.Drawing.Size(121, 24);
+            this.listcolor.TabIndex = 10;
+            this.listcolor.SelectedIndexChanged += new System.EventHandler(this.listcolor_SelectedIndexChanged);
+            // 
+            // countrylist
+            // 
+            this.countrylist.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.countrylist.Activation = System.Windows.Forms.ItemActivation.OneClick;
+            this.countrylist.HideSelection = false;
+            this.countrylist.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            listViewItem1.StateImageIndex = 0;
+            listViewItem2.StateImageIndex = 0;
+            listViewItem3.StateImageIndex = 0;
+            listViewItem4.StateImageIndex = 0;
+            listViewItem5.StateImageIndex = 0;
+            this.countrylist.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4,
+            listViewItem5});
+            this.countrylist.LargeImageList = this.imageList1;
+            this.countrylist.Location = new System.Drawing.Point(12, 241);
+            this.countrylist.Name = "countrylist";
+            this.countrylist.Size = new System.Drawing.Size(248, 156);
+            this.countrylist.TabIndex = 11;
+            this.info_countrylist.SetToolTip(this.countrylist, "Чтобы перейти на сайт в википедии нажмите на страну");
+            this.countrylist.UseCompatibleStateImageBehavior = false;
+            this.countrylist.SelectedIndexChanged += new System.EventHandler(this.countrylist_SelectedIndexChanged);
+            // 
+            // text6
+            // 
+            this.text6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.text6.Location = new System.Drawing.Point(12, 210);
+            this.text6.Name = "text6";
+            this.text6.Size = new System.Drawing.Size(244, 28);
+            this.text6.TabIndex = 12;
+            this.text6.Text = "Узнать больше о стране";
+            // 
+            // Reset
+            // 
+            this.Reset.Location = new System.Drawing.Point(154, 40);
+            this.Reset.Name = "Reset";
+            this.Reset.Size = new System.Drawing.Size(78, 28);
+            this.Reset.TabIndex = 13;
+            this.Reset.Text = "Сброс";
+            this.Reset.UseVisualStyleBackColor = true;
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(238, 12);
+            this.progressBar1.MarqueeAnimationSpeed = 10;
+            this.progressBar1.Maximum = 10;
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(69, 17);
+            this.progressBar1.Step = 1;
+            this.progressBar1.TabIndex = 0;
+            // 
+            // openPicture
+            // 
+            this.openPicture.FileName = "openPicture";
+            this.openPicture.Filter = "Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*";
+            // 
+            // pagelist_3
+            // 
+            this.pagelist_3.Controls.Add(this.panelflip);
+            this.pagelist_3.Controls.Add(this.pictureturn);
+            this.pagelist_3.Location = new System.Drawing.Point(4, 25);
+            this.pagelist_3.Name = "pagelist_3";
+            this.pagelist_3.Size = new System.Drawing.Size(644, 502);
+            this.pagelist_3.TabIndex = 2;
+            this.pagelist_3.Text = "White list";
+            this.pagelist_3.UseVisualStyleBackColor = true;
+            // 
+            // panelflip
+            // 
+            this.panelflip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelflip.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelflip.Controls.Add(this.flip_180);
+            this.panelflip.Controls.Add(this.flip_90l);
+            this.panelflip.Controls.Add(this.btn_selectPicture);
+            this.panelflip.Controls.Add(this.flip_90r);
+            this.panelflip.Location = new System.Drawing.Point(3, 443);
+            this.panelflip.Name = "panelflip";
+            this.panelflip.Size = new System.Drawing.Size(637, 55);
+            this.panelflip.TabIndex = 5;
+            // 
+            // flip_180
+            // 
+            this.flip_180.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.flip_180.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flip_180.ImageIndex = 6;
+            this.flip_180.Location = new System.Drawing.Point(311, 12);
+            this.flip_180.Name = "flip_180";
+            this.flip_180.Size = new System.Drawing.Size(91, 31);
+            this.flip_180.TabIndex = 5;
+            this.flip_180.Text = "180°";
+            this.flip_180.UseVisualStyleBackColor = true;
+            this.flip_180.Click += new System.EventHandler(this.flip_180_Click);
+            // 
+            // flip_90l
+            // 
+            this.flip_90l.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flip_90l.ImageIndex = 5;
+            this.flip_90l.ImageList = this.imageList1;
+            this.flip_90l.Location = new System.Drawing.Point(3, 12);
+            this.flip_90l.Name = "flip_90l";
+            this.flip_90l.Size = new System.Drawing.Size(147, 31);
+            this.flip_90l.TabIndex = 4;
+            this.flip_90l.Text = "Поворот на 90°";
+            this.flip_90l.UseVisualStyleBackColor = true;
+            this.flip_90l.Click += new System.EventHandler(this.flip_90l_Click);
+            // 
+            // btn_selectPicture
+            // 
+            this.btn_selectPicture.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_selectPicture.Location = new System.Drawing.Point(449, 12);
+            this.btn_selectPicture.Name = "btn_selectPicture";
+            this.btn_selectPicture.Size = new System.Drawing.Size(185, 31);
+            this.btn_selectPicture.TabIndex = 2;
+            this.btn_selectPicture.Text = "Выбрать картинку";
+            this.btn_selectPicture.UseVisualStyleBackColor = true;
+            this.btn_selectPicture.Click += new System.EventHandler(this.btn_selectPicture_Click);
+            // 
+            // flip_90r
+            // 
+            this.flip_90r.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flip_90r.ImageIndex = 6;
+            this.flip_90r.ImageList = this.imageList1;
+            this.flip_90r.Location = new System.Drawing.Point(156, 12);
+            this.flip_90r.Name = "flip_90r";
+            this.flip_90r.Size = new System.Drawing.Size(149, 31);
+            this.flip_90r.TabIndex = 3;
+            this.flip_90r.Text = "Поворот на 90°";
+            this.flip_90r.UseVisualStyleBackColor = true;
+            this.flip_90r.Click += new System.EventHandler(this.flip_90r_Click);
+            // 
+            // pictureturn
+            // 
+            this.pictureturn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pagelist.Controls.Add(this.pagelist_1);
-            this.pagelist.Controls.Add(this.pagelist_2);
-            this.pagelist.Controls.Add(this.pagelist_3);
-            this.pagelist.Location = new System.Drawing.Point(313, 12);
-            this.pagelist.Name = "pagelist";
-            this.pagelist.SelectedIndex = 0;
-            this.pagelist.Size = new System.Drawing.Size(652, 531);
-            this.pagelist.TabIndex = 7;
-            // 
-            // pagelist_1
-            // 
-            this.pagelist_1.BackColor = System.Drawing.SystemColors.Window;
-            this.pagelist_1.Controls.Add(this.pbfull);
-            this.pagelist_1.Location = new System.Drawing.Point(4, 25);
-            this.pagelist_1.Name = "pagelist_1";
-            this.pagelist_1.Padding = new System.Windows.Forms.Padding(3);
-            this.pagelist_1.Size = new System.Drawing.Size(644, 502);
-            this.pagelist_1.TabIndex = 0;
-            this.pagelist_1.Text = "Color list";
-            // 
-            // pbfull
-            // 
-            this.pbfull.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbfull.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.pbfull.Location = new System.Drawing.Point(3, 12);
-            this.pbfull.Name = "pbfull";
-            this.pbfull.Size = new System.Drawing.Size(632, 390);
-            this.pbfull.TabIndex = 14;
-            this.pbfull.Text = "ProgressBar Заполнен\r\n\r\nнажмите на кнопку Hello либо Сброс";
-            this.pbfull.Visible = false;
+            this.pictureturn.Location = new System.Drawing.Point(3, 3);
+            this.pictureturn.Name = "pictureturn";
+            this.pictureturn.Size = new System.Drawing.Size(638, 434);
+            this.pictureturn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureturn.TabIndex = 1;
+            this.pictureturn.TabStop = false;
             // 
             // pagelist_2
             // 
@@ -281,6 +449,7 @@
             // 
             // CHECK
             // 
+            this.CHECK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.CHECK.Location = new System.Drawing.Point(365, 405);
             this.CHECK.Name = "CHECK";
             this.CHECK.Size = new System.Drawing.Size(273, 80);
@@ -320,159 +489,169 @@
             this.checkedListBox.TabIndex = 1;
             this.checkedListBox.Click += new System.EventHandler(this.CHECK_Click);
             // 
-            // pagelist_3
+            // pagelist_1
             // 
-            this.pagelist_3.Controls.Add(this.button1);
-            this.pagelist_3.Controls.Add(this.btn_selectPicture);
-            this.pagelist_3.Controls.Add(this.pictureturn);
-            this.pagelist_3.Controls.Add(this.overturn);
-            this.pagelist_3.Location = new System.Drawing.Point(4, 25);
-            this.pagelist_3.Name = "pagelist_3";
-            this.pagelist_3.Size = new System.Drawing.Size(644, 502);
-            this.pagelist_3.TabIndex = 2;
-            this.pagelist_3.Text = "White list";
-            this.pagelist_3.UseVisualStyleBackColor = true;
+            this.pagelist_1.BackColor = System.Drawing.SystemColors.Window;
+            this.pagelist_1.Controls.Add(this.pbfull);
+            this.pagelist_1.Location = new System.Drawing.Point(4, 25);
+            this.pagelist_1.Name = "pagelist_1";
+            this.pagelist_1.Padding = new System.Windows.Forms.Padding(3);
+            this.pagelist_1.Size = new System.Drawing.Size(644, 502);
+            this.pagelist_1.TabIndex = 0;
+            this.pagelist_1.Text = "Color list";
             // 
-            // btn_selectPicture
+            // pbfull
             // 
-            this.btn_selectPicture.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_selectPicture.Location = new System.Drawing.Point(456, 443);
-            this.btn_selectPicture.Name = "btn_selectPicture";
-            this.btn_selectPicture.Size = new System.Drawing.Size(185, 31);
-            this.btn_selectPicture.TabIndex = 2;
-            this.btn_selectPicture.Text = "Выбрать картинку";
-            this.btn_selectPicture.UseVisualStyleBackColor = true;
-            this.btn_selectPicture.Click += new System.EventHandler(this.btn_selectPicture_Click);
-            // 
-            // pictureturn
-            // 
-            this.pictureturn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pbfull.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureturn.Location = new System.Drawing.Point(3, 3);
-            this.pictureturn.Name = "pictureturn";
-            this.pictureturn.Size = new System.Drawing.Size(638, 434);
-            this.pictureturn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureturn.TabIndex = 1;
-            this.pictureturn.TabStop = false;
+            this.pbfull.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.pbfull.Location = new System.Drawing.Point(3, 12);
+            this.pbfull.Name = "pbfull";
+            this.pbfull.Size = new System.Drawing.Size(632, 390);
+            this.pbfull.TabIndex = 14;
+            this.pbfull.Text = "ProgressBar Заполнен\r\n\r\nнажмите на кнопку Hello либо Сброс";
+            this.pbfull.Visible = false;
             // 
-            // overturn
+            // pagelist
             // 
-            this.overturn.Location = new System.Drawing.Point(3, 443);
-            this.overturn.Maximum = 360;
-            this.overturn.Name = "overturn";
-            this.overturn.Size = new System.Drawing.Size(235, 56);
-            this.overturn.TabIndex = 0;
+            this.pagelist.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pagelist.Controls.Add(this.pagelist_1);
+            this.pagelist.Controls.Add(this.pagelist_2);
+            this.pagelist.Controls.Add(this.pagelist_3);
+            this.pagelist.Controls.Add(this.pagelist_4);
+            this.pagelist.Location = new System.Drawing.Point(313, 12);
+            this.pagelist.Name = "pagelist";
+            this.pagelist.SelectedIndex = 0;
+            this.pagelist.Size = new System.Drawing.Size(652, 531);
+            this.pagelist.TabIndex = 7;
             // 
-            // text4
+            // pagelist_4
             // 
-            this.text4.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.text4.Location = new System.Drawing.Point(9, 150);
-            this.text4.Name = "text4";
-            this.text4.Size = new System.Drawing.Size(118, 60);
-            this.text4.TabIndex = 9;
-            this.text4.Text = "Выберите цвет для фона у цветного листа";
+            this.pagelist_4.Controls.Add(this.splitContainer1);
+            this.pagelist_4.Location = new System.Drawing.Point(4, 25);
+            this.pagelist_4.Name = "pagelist_4";
+            this.pagelist_4.Padding = new System.Windows.Forms.Padding(3);
+            this.pagelist_4.Size = new System.Drawing.Size(644, 502);
+            this.pagelist_4.TabIndex = 3;
+            this.pagelist_4.Text = "Test PDD";
+            this.pagelist_4.UseVisualStyleBackColor = true;
             // 
-            // listcolor
+            // splitContainer1
             // 
-            this.listcolor.FormattingEnabled = true;
-            this.listcolor.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.listcolor.Items.AddRange(new object[] {
-            "Красный",
-            "Оранжевый",
-            "Жёлтый",
-            "Зелёный",
-            "Голубой",
-            "Синий",
-            "Фиолетовый",
-            "Белый",
-            "Черный",
-            "Серый"});
-            this.listcolor.Location = new System.Drawing.Point(139, 165);
-            this.listcolor.Name = "listcolor";
-            this.listcolor.Size = new System.Drawing.Size(121, 24);
-            this.listcolor.TabIndex = 10;
-            this.listcolor.SelectedIndexChanged += new System.EventHandler(this.listcolor_SelectedIndexChanged);
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.splitContainer1.Location = new System.Drawing.Point(6, 6);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // countrylist
+            // splitContainer1.Panel1
             // 
-            this.countrylist.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-            this.countrylist.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.countrylist.HideSelection = false;
-            this.countrylist.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            listViewItem6.StateImageIndex = 0;
-            listViewItem7.StateImageIndex = 0;
-            listViewItem8.StateImageIndex = 0;
-            listViewItem9.StateImageIndex = 0;
-            listViewItem10.StateImageIndex = 0;
-            this.countrylist.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem6,
-            listViewItem7,
-            listViewItem8,
-            listViewItem9,
-            listViewItem10});
-            this.countrylist.LargeImageList = this.imageList1;
-            this.countrylist.Location = new System.Drawing.Point(12, 241);
-            this.countrylist.Name = "countrylist";
-            this.countrylist.Size = new System.Drawing.Size(244, 121);
-            this.countrylist.TabIndex = 11;
-            this.info_countrylist.SetToolTip(this.countrylist, "Чтобы перейти на сайт в википедии нажмите на страну");
-            this.countrylist.UseCompatibleStateImageBehavior = false;
-            this.countrylist.SelectedIndexChanged += new System.EventHandler(this.countrylist_SelectedIndexChanged);
+            this.splitContainer1.Panel1.Controls.Add(this.panelquestion);
+            this.splitContainer1.Panel1.Controls.Add(this.picturePDD);
             // 
-            // imageList1
+            // splitContainer1.Panel2
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "Russia.jpg");
-            this.imageList1.Images.SetKeyName(1, "china.jpg");
-            this.imageList1.Images.SetKeyName(2, "belarus.png");
-            this.imageList1.Images.SetKeyName(3, "Germany.jpg");
-            this.imageList1.Images.SetKeyName(4, "America.jpg");
+            this.splitContainer1.Panel2.Controls.Add(this.rezultat);
+            this.splitContainer1.Size = new System.Drawing.Size(632, 493);
+            this.splitContainer1.SplitterDistance = 417;
+            this.splitContainer1.TabIndex = 0;
             // 
-            // text6
+            // panelquestion
             // 
-            this.text6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.text6.Location = new System.Drawing.Point(12, 210);
-            this.text6.Name = "text6";
-            this.text6.Size = new System.Drawing.Size(244, 28);
-            this.text6.TabIndex = 12;
-            this.text6.Text = "Узнать больше о стране";
+            this.panelquestion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelquestion.Controls.Add(this.answer3);
+            this.panelquestion.Controls.Add(this.answer2);
+            this.panelquestion.Controls.Add(this.answer1);
+            this.panelquestion.Controls.Add(this.labelquestion);
+            this.panelquestion.Location = new System.Drawing.Point(4, 274);
+            this.panelquestion.Name = "panelquestion";
+            this.panelquestion.Size = new System.Drawing.Size(623, 138);
+            this.panelquestion.TabIndex = 1;
             // 
-            // Reset
+            // labelquestion
             // 
-            this.Reset.Location = new System.Drawing.Point(154, 40);
-            this.Reset.Name = "Reset";
-            this.Reset.Size = new System.Drawing.Size(78, 28);
-            this.Reset.TabIndex = 13;
-            this.Reset.Text = "Сброс";
-            this.Reset.UseVisualStyleBackColor = true;
-            this.Reset.Click += new System.EventHandler(this.Reset_Click);
+            this.labelquestion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelquestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelquestion.Location = new System.Drawing.Point(3, 0);
+            this.labelquestion.Name = "labelquestion";
+            this.labelquestion.Size = new System.Drawing.Size(617, 48);
+            this.labelquestion.TabIndex = 0;
+            this.labelquestion.Text = "В зоне действия этого знака разрешается использовать звуковой сигнал:";
             // 
-            // progressBar1
+            // picturePDD
             // 
-            this.progressBar1.Location = new System.Drawing.Point(238, 12);
-            this.progressBar1.MarqueeAnimationSpeed = 10;
-            this.progressBar1.Maximum = 10;
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(69, 17);
-            this.progressBar1.Step = 1;
-            this.progressBar1.TabIndex = 0;
+            this.picturePDD.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picturePDD.Image = global::_1_laba_OOP.Properties.Resources._26_3;
+            this.picturePDD.Location = new System.Drawing.Point(4, 4);
+            this.picturePDD.Name = "picturePDD";
+            this.picturePDD.Size = new System.Drawing.Size(623, 264);
+            this.picturePDD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picturePDD.TabIndex = 0;
+            this.picturePDD.TabStop = false;
             // 
-            // openPicture
+            // answer1
             // 
-            this.openPicture.FileName = "openPicture";
-            this.openPicture.Filter = "Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*";
+            this.answer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.answer1.AutoSize = true;
+            this.answer1.Location = new System.Drawing.Point(7, 51);
+            this.answer1.Name = "answer1";
+            this.answer1.Size = new System.Drawing.Size(289, 21);
+            this.answer1.TabIndex = 1;
+            this.answer1.TabStop = true;
+            this.answer1.Text = "Только для предупреждения об обгоне";
+            this.answer1.UseVisualStyleBackColor = true;
+            this.answer1.CheckedChanged += new System.EventHandler(this.answer1_CheckedChanged);
             // 
-            // button1
+            // answer2
             // 
-            this.button1.Location = new System.Drawing.Point(245, 450);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.answer2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.answer2.AutoSize = true;
+            this.answer2.Location = new System.Drawing.Point(7, 79);
+            this.answer2.Name = "answer2";
+            this.answer2.Size = new System.Drawing.Size(484, 21);
+            this.answer2.TabIndex = 2;
+            this.answer2.TabStop = true;
+            this.answer2.Text = "Только для предотвращения дорожно-транспортного происшествия";
+            this.answer2.UseVisualStyleBackColor = true;
+            this.answer2.CheckedChanged += new System.EventHandler(this.answer2_CheckedChanged);
+            // 
+            // answer3
+            // 
+            this.answer3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.answer3.AutoSize = true;
+            this.answer3.Location = new System.Drawing.Point(7, 107);
+            this.answer3.Name = "answer3";
+            this.answer3.Size = new System.Drawing.Size(243, 21);
+            this.answer3.TabIndex = 3;
+            this.answer3.TabStop = true;
+            this.answer3.Text = "В обоих перечисленных случаях";
+            this.answer3.UseVisualStyleBackColor = true;
+            this.answer3.CheckedChanged += new System.EventHandler(this.answer1_CheckedChanged);
+            // 
+            // rezultat
+            // 
+            this.rezultat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rezultat.ForeColor = System.Drawing.Color.Black;
+            this.rezultat.Location = new System.Drawing.Point(4, 4);
+            this.rezultat.Name = "rezultat";
+            this.rezultat.Size = new System.Drawing.Size(623, 66);
+            this.rezultat.TabIndex = 0;
+            this.rezultat.Text = "Ваш ответ: ";
             // 
             // MainForm
             // 
@@ -495,17 +674,24 @@
             this.Controls.Add(this.button_Hello);
             this.Name = "MainForm";
             this.Text = "1laba";
-            this.pagelist.ResumeLayout(false);
-            this.pagelist_1.ResumeLayout(false);
+            this.pagelist_3.ResumeLayout(false);
+            this.panelflip.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureturn)).EndInit();
             this.pagelist_2.ResumeLayout(false);
             this.pagelist_2.PerformLayout();
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
-            this.pagelist_3.ResumeLayout(false);
-            this.pagelist_3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureturn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.overturn)).EndInit();
+            this.pagelist_1.ResumeLayout(false);
+            this.pagelist.ResumeLayout(false);
+            this.pagelist_4.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.panelquestion.ResumeLayout(false);
+            this.panelquestion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePDD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -520,10 +706,6 @@
         private System.Windows.Forms.TextBox poleinput;
         private System.Windows.Forms.TextBox polerepeat;
         private System.Windows.Forms.Label text3;
-        private System.Windows.Forms.TabControl pagelist;
-        public System.Windows.Forms.TabPage pagelist_1;
-        public System.Windows.Forms.TabPage pagelist_2;
-        public System.Windows.Forms.TabPage pagelist_3;
         private System.Windows.Forms.Label text4;
         private System.Windows.Forms.ComboBox listcolor;
         private System.Windows.Forms.ListView countrylist;
@@ -531,12 +713,17 @@
         private System.Windows.Forms.Label text6;
         private System.Windows.Forms.Button Reset;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Label pbfull;
         private System.Windows.Forms.ToolTip info_countrylist;
-        private System.Windows.Forms.CheckedListBox checkedListBox;
-        private System.Windows.Forms.PictureBox picture;
+        private System.Windows.Forms.OpenFileDialog openPicture;
+        public System.Windows.Forms.TabPage pagelist_3;
+        private System.Windows.Forms.Panel panelflip;
+        private System.Windows.Forms.Button flip_180;
+        private System.Windows.Forms.Button flip_90l;
+        private System.Windows.Forms.Button btn_selectPicture;
+        private System.Windows.Forms.Button flip_90r;
+        private System.Windows.Forms.PictureBox pictureturn;
+        public System.Windows.Forms.TabPage pagelist_2;
         private System.Windows.Forms.Label label_Task;
-        private System.Windows.Forms.Button CHECK;
         private System.Windows.Forms.MenuStrip Menu;
         private System.Windows.Forms.ToolStripMenuItem main;
         private System.Windows.Forms.ToolStripMenuItem Info;
@@ -544,11 +731,21 @@
         private System.Windows.Forms.ToolStripMenuItem Komplekt;
         private System.Windows.Forms.ToolStripMenuItem CPU;
         private System.Windows.Forms.ToolStripMenuItem GPU;
-        private System.Windows.Forms.Button btn_selectPicture;
-        private System.Windows.Forms.PictureBox pictureturn;
-        private System.Windows.Forms.TrackBar overturn;
-        private System.Windows.Forms.OpenFileDialog openPicture;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button CHECK;
+        private System.Windows.Forms.PictureBox picture;
+        private System.Windows.Forms.CheckedListBox checkedListBox;
+        public System.Windows.Forms.TabPage pagelist_1;
+        private System.Windows.Forms.Label pbfull;
+        private System.Windows.Forms.TabControl pagelist;
+        private System.Windows.Forms.TabPage pagelist_4;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.PictureBox picturePDD;
+        private System.Windows.Forms.Panel panelquestion;
+        private System.Windows.Forms.Label labelquestion;
+        private System.Windows.Forms.RadioButton answer3;
+        private System.Windows.Forms.RadioButton answer2;
+        private System.Windows.Forms.RadioButton answer1;
+        private System.Windows.Forms.Label rezultat;
     }
 }
 

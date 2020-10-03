@@ -63,6 +63,16 @@ namespace _1_laba_OOP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _26_3 {
+            get {
+                object obj = ResourceManager.GetObject("26_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CONGRATULATION {
             get {
                 object obj = ResourceManager.GetObject("CONGRATULATION", resourceCulture);
@@ -86,6 +96,16 @@ namespace _1_laba_OOP.Properties {
         internal static System.Drawing.Bitmap fireworks {
             get {
                 object obj = ResourceManager.GetObject("fireworks", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap right {
+            get {
+                object obj = ResourceManager.GetObject("right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -121,8 +121,14 @@
   <data name="rtx3090" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rtx3090.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Dont" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dont.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="xeon-d-2100-2x1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\xeon-d-2100-2x1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="String" xml:space="preserve">
+    <value>picture.Image = global::_1_laba_OOP.Properties.Resources.xeon_d_2100_2x1;</value>
   </data>
   <data name="CONGRATULATION" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CONGRATULATION.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,10 +136,10 @@
   <data name="fireworks" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fireworks.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="String" xml:space="preserve">
-    <value>picture.Image = global::_1_laba_OOP.Properties.Resources.xeon_d_2100_2x1;</value>
+  <data name="right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Dont" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dont.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="26_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\26_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

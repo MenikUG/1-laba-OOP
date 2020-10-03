@@ -188,18 +188,56 @@ namespace _1_laba_OOP
         }
 
         Bitmap bitmap1;
+        bool sel_picture;
         private void btn_selectPicture_Click(object sender, EventArgs e)
         {
             if (openPicture.ShowDialog() == DialogResult.Cancel)
                 return;
             pictureturn.ImageLocation = openPicture.FileName;
             bitmap1 = (Bitmap)Bitmap.FromFile(openPicture.FileName);
+            sel_picture = true;
         }
-        private void button1_Click(object sender, EventArgs e)
+
+        private void flip_90r_Click(object sender, EventArgs e)
         {
-            bitmap1.RotateFlip(RotateFlipType.Rotate90FlipNone);
-            pictureturn.Image = bitmap1;
-            pictureturn.Refresh();
+            if(sel_picture)
+            {
+                bitmap1.RotateFlip(RotateFlipType.Rotate90FlipNone);
+                pictureturn.Image = bitmap1;
+                pictureturn.Refresh();
+            }
+        }
+
+
+        private void flip_90l_Click(object sender, EventArgs e)
+        {
+            if (sel_picture)
+            {
+                bitmap1.RotateFlip(RotateFlipType.Rotate90FlipXY);
+                pictureturn.Image = bitmap1;
+                pictureturn.Refresh();
+            }
+        }
+
+        private void flip_180_Click(object sender, EventArgs e)
+        {
+            if (sel_picture)
+            {  
+                bitmap1.RotateFlip(RotateFlipType.Rotate180FlipNone);
+                pictureturn.Image = bitmap1;
+                pictureturn.Refresh();
+            }
+        }
+        private void answer1_CheckedChanged(object sender, EventArgs e)
+        {
+            rezultat.Text = "Ваш ответ: не верен";
+            rezultat.ForeColor = System.Drawing.Color.Red;
+        }
+
+        private void answer2_CheckedChanged(object sender, EventArgs e)
+        {
+            rezultat.Text = "Ваш ответ: верен";
+            rezultat.ForeColor = System.Drawing.Color.Green;
         }
     }
     
