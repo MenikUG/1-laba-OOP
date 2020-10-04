@@ -55,6 +55,8 @@
             this.Reset = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.info_countrylist = new System.Windows.Forms.ToolTip(this.components);
+            this.btn_create_on = new System.Windows.Forms.Button();
+            this.btn_create_off = new System.Windows.Forms.Button();
             this.openPicture = new System.Windows.Forms.OpenFileDialog();
             this.pagelist_3 = new System.Windows.Forms.TabPage();
             this.panelflip = new System.Windows.Forms.Panel();
@@ -81,11 +83,11 @@
             this.pagelist_4 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panelquestion = new System.Windows.Forms.Panel();
+            this.answer3 = new System.Windows.Forms.RadioButton();
+            this.answer2 = new System.Windows.Forms.RadioButton();
+            this.answer1 = new System.Windows.Forms.RadioButton();
             this.labelquestion = new System.Windows.Forms.Label();
             this.picturePDD = new System.Windows.Forms.PictureBox();
-            this.answer1 = new System.Windows.Forms.RadioButton();
-            this.answer2 = new System.Windows.Forms.RadioButton();
-            this.answer3 = new System.Windows.Forms.RadioButton();
             this.rezultat = new System.Windows.Forms.Label();
             this.pagelist_3.SuspendLayout();
             this.panelflip.SuspendLayout();
@@ -268,6 +270,30 @@
             this.progressBar1.Step = 1;
             this.progressBar1.TabIndex = 0;
             // 
+            // btn_create_on
+            // 
+            this.btn_create_on.Location = new System.Drawing.Point(12, 403);
+            this.btn_create_on.Name = "btn_create_on";
+            this.btn_create_on.Size = new System.Drawing.Size(248, 44);
+            this.btn_create_on.TabIndex = 14;
+            this.btn_create_on.Text = "Включить динамическое создание кнопок";
+            this.info_countrylist.SetToolTip(this.btn_create_on, "После нажатия на данную кнопку, нажмите в то место, где желаете создать динамичес" +
+        "ки кнопки");
+            this.btn_create_on.UseVisualStyleBackColor = true;
+            this.btn_create_on.Click += new System.EventHandler(this.btn_create_on_Click);
+            // 
+            // btn_create_off
+            // 
+            this.btn_create_off.Location = new System.Drawing.Point(12, 453);
+            this.btn_create_off.Name = "btn_create_off";
+            this.btn_create_off.Size = new System.Drawing.Size(248, 44);
+            this.btn_create_off.TabIndex = 15;
+            this.btn_create_off.Text = "Выключить динамическое создание кнопок";
+            this.info_countrylist.SetToolTip(this.btn_create_off, "После нажатия на данную кнопку, нажмите в то место, где желаете создать динамичес" +
+        "ки кнопки");
+            this.btn_create_off.UseVisualStyleBackColor = true;
+            this.btn_create_off.Click += new System.EventHandler(this.btn_create_off_Click);
+            // 
             // openPicture
             // 
             this.openPicture.FileName = "openPicture";
@@ -296,6 +322,7 @@
             this.panelflip.Name = "panelflip";
             this.panelflip.Size = new System.Drawing.Size(637, 55);
             this.panelflip.TabIndex = 5;
+            this.panelflip.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
             // 
             // flip_180
             // 
@@ -358,6 +385,7 @@
             this.pictureturn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureturn.TabIndex = 1;
             this.pictureturn.TabStop = false;
+            this.pictureturn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
             // 
             // pagelist_2
             // 
@@ -373,6 +401,7 @@
             this.pagelist_2.Size = new System.Drawing.Size(644, 502);
             this.pagelist_2.TabIndex = 1;
             this.pagelist_2.Text = "Gray list";
+            this.pagelist_2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
             // 
             // label_Task
             // 
@@ -469,6 +498,7 @@
             this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picture.TabIndex = 14;
             this.picture.TabStop = false;
+            this.picture.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
             // 
             // checkedListBox
             // 
@@ -487,7 +517,7 @@
             this.checkedListBox.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.checkedListBox.Size = new System.Drawing.Size(638, 106);
             this.checkedListBox.TabIndex = 1;
-            this.checkedListBox.Click += new System.EventHandler(this.CHECK_Click);
+            this.checkedListBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
             // 
             // pagelist_1
             // 
@@ -499,6 +529,7 @@
             this.pagelist_1.Size = new System.Drawing.Size(644, 502);
             this.pagelist_1.TabIndex = 0;
             this.pagelist_1.Text = "Color list";
+            this.pagelist_1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
             // 
             // pbfull
             // 
@@ -508,10 +539,11 @@
             this.pbfull.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.pbfull.Location = new System.Drawing.Point(3, 12);
             this.pbfull.Name = "pbfull";
-            this.pbfull.Size = new System.Drawing.Size(632, 390);
+            this.pbfull.Size = new System.Drawing.Size(632, 230);
             this.pbfull.TabIndex = 14;
             this.pbfull.Text = "ProgressBar Заполнен\r\n\r\nнажмите на кнопку Hello либо Сброс";
             this.pbfull.Visible = false;
+            this.pbfull.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
             // 
             // pagelist
             // 
@@ -527,6 +559,7 @@
             this.pagelist.SelectedIndex = 0;
             this.pagelist.Size = new System.Drawing.Size(652, 531);
             this.pagelist.TabIndex = 7;
+            this.pagelist.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
             // 
             // pagelist_4
             // 
@@ -572,6 +605,52 @@
             this.panelquestion.Name = "panelquestion";
             this.panelquestion.Size = new System.Drawing.Size(623, 138);
             this.panelquestion.TabIndex = 1;
+            this.panelquestion.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
+            // 
+            // answer3
+            // 
+            this.answer3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.answer3.AutoSize = true;
+            this.answer3.Location = new System.Drawing.Point(7, 107);
+            this.answer3.Name = "answer3";
+            this.answer3.Size = new System.Drawing.Size(243, 21);
+            this.answer3.TabIndex = 3;
+            this.answer3.TabStop = true;
+            this.answer3.Text = "В обоих перечисленных случаях";
+            this.answer3.UseVisualStyleBackColor = true;
+            this.answer3.CheckedChanged += new System.EventHandler(this.answer1_CheckedChanged);
+            // 
+            // answer2
+            // 
+            this.answer2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.answer2.AutoSize = true;
+            this.answer2.Location = new System.Drawing.Point(7, 79);
+            this.answer2.Name = "answer2";
+            this.answer2.Size = new System.Drawing.Size(484, 21);
+            this.answer2.TabIndex = 2;
+            this.answer2.TabStop = true;
+            this.answer2.Text = "Только для предотвращения дорожно-транспортного происшествия";
+            this.answer2.UseVisualStyleBackColor = true;
+            this.answer2.CheckedChanged += new System.EventHandler(this.answer2_CheckedChanged);
+            // 
+            // answer1
+            // 
+            this.answer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.answer1.AutoSize = true;
+            this.answer1.Location = new System.Drawing.Point(7, 51);
+            this.answer1.Name = "answer1";
+            this.answer1.Size = new System.Drawing.Size(289, 21);
+            this.answer1.TabIndex = 1;
+            this.answer1.TabStop = true;
+            this.answer1.Text = "Только для предупреждения об обгоне";
+            this.answer1.UseVisualStyleBackColor = true;
+            this.answer1.CheckedChanged += new System.EventHandler(this.answer1_CheckedChanged);
             // 
             // labelquestion
             // 
@@ -597,51 +676,7 @@
             this.picturePDD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturePDD.TabIndex = 0;
             this.picturePDD.TabStop = false;
-            // 
-            // answer1
-            // 
-            this.answer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.answer1.AutoSize = true;
-            this.answer1.Location = new System.Drawing.Point(7, 51);
-            this.answer1.Name = "answer1";
-            this.answer1.Size = new System.Drawing.Size(289, 21);
-            this.answer1.TabIndex = 1;
-            this.answer1.TabStop = true;
-            this.answer1.Text = "Только для предупреждения об обгоне";
-            this.answer1.UseVisualStyleBackColor = true;
-            this.answer1.CheckedChanged += new System.EventHandler(this.answer1_CheckedChanged);
-            // 
-            // answer2
-            // 
-            this.answer2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.answer2.AutoSize = true;
-            this.answer2.Location = new System.Drawing.Point(7, 79);
-            this.answer2.Name = "answer2";
-            this.answer2.Size = new System.Drawing.Size(484, 21);
-            this.answer2.TabIndex = 2;
-            this.answer2.TabStop = true;
-            this.answer2.Text = "Только для предотвращения дорожно-транспортного происшествия";
-            this.answer2.UseVisualStyleBackColor = true;
-            this.answer2.CheckedChanged += new System.EventHandler(this.answer2_CheckedChanged);
-            // 
-            // answer3
-            // 
-            this.answer3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.answer3.AutoSize = true;
-            this.answer3.Location = new System.Drawing.Point(7, 107);
-            this.answer3.Name = "answer3";
-            this.answer3.Size = new System.Drawing.Size(243, 21);
-            this.answer3.TabIndex = 3;
-            this.answer3.TabStop = true;
-            this.answer3.Text = "В обоих перечисленных случаях";
-            this.answer3.UseVisualStyleBackColor = true;
-            this.answer3.CheckedChanged += new System.EventHandler(this.answer1_CheckedChanged);
+            this.picturePDD.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
             // 
             // rezultat
             // 
@@ -652,12 +687,15 @@
             this.rezultat.Size = new System.Drawing.Size(623, 66);
             this.rezultat.TabIndex = 0;
             this.rezultat.Text = "Ваш ответ: ";
+            this.rezultat.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(977, 555);
+            this.Controls.Add(this.btn_create_off);
+            this.Controls.Add(this.btn_create_on);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.Reset);
             this.Controls.Add(this.text6);
@@ -674,6 +712,7 @@
             this.Controls.Add(this.button_Hello);
             this.Name = "MainForm";
             this.Text = "1laba";
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);
             this.pagelist_3.ResumeLayout(false);
             this.panelflip.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureturn)).EndInit();
@@ -746,6 +785,8 @@
         private System.Windows.Forms.RadioButton answer2;
         private System.Windows.Forms.RadioButton answer1;
         private System.Windows.Forms.Label rezultat;
+        private System.Windows.Forms.Button btn_create_on;
+        private System.Windows.Forms.Button btn_create_off;
     }
 }
 

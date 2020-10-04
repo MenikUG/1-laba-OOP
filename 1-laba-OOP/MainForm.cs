@@ -31,7 +31,7 @@ namespace _1_laba_OOP
             }
             else
             {
-                MessageBox.Show("Progress Bar достиг максимума",
+                MessageBox.Show("Progress Bar достиг максимума. Нажмите на кнопку 'Сброс",
                     "WARNING",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning,
@@ -239,7 +239,30 @@ namespace _1_laba_OOP
             rezultat.Text = "Ваш ответ: верен";
             rezultat.ForeColor = System.Drawing.Color.Green;
         }
-    }
-    
 
+        bool btncreate;
+        private void btn_create_on_Click(object sender, EventArgs e)
+        {
+            btncreate = true;
+        }
+
+        private void MainForm_MouseClick(object sender, MouseEventArgs е)
+        {
+            if (btncreate)
+            {
+                System.Windows.Forms.Button btn = new System.Windows.Forms.Button();
+                btn.Location = new System.Drawing.Point(е.X - btn.Size.Width / 2, е.Y - btn.Size.Height / 2);
+                btn.Text = "Hello";
+                btn.UseVisualStyleBackColor = true;
+                btn.Size = new System.Drawing.Size(75, 28);
+                btn.Click += new System.EventHandler(button_Hello_Click);
+                Controls.Add(btn);
+            }
+        }
+
+        private void btn_create_off_Click(object sender, EventArgs e)
+        {
+            btncreate = false;
+        }
+    }
 }
